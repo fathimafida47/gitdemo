@@ -1,0 +1,206 @@
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7
+$ git config --global user.name "fathimafida47"
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7
+$ git config --global user.email "fathimafida8281@gmail.com"
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=fathimafida47
+user.email=fathimafida8281@gmail.com
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7
+$ dir
+demogit.html
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7
+$ git init
+Initialized empty Git repository in C:/Users/91701/Desktop/baabtra/GIT-22-7/.git/
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demogit.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git add .
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demogit.html
+
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demogit.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demogit.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo1.html
+
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git add demo1.html
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo1.html
+        new file:   demogit.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demogit.html
+
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git add .
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo1.html
+        new file:   demogit.html
+
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git commit -m "first commit"
+[master (root-commit) fff60da] first commit
+ 2 files changed, 23 insertions(+)
+ create mode 100644 demo1.html
+ create mode 100644 demogit.html
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git remote -v
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git remote add origin https://github.com/fathimafida47/gitdemo.git
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git remote -v
+origin  https://github.com/fathimafida47/gitdemo.git (fetch)
+origin  https://github.com/fathimafida47/gitdemo.git (push)
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (master)
+$ git push origin master
+info: please complete authentication in your browser...
+
+
+
+
+
+[newbranch aac530a] second commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 demo2.html
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (newbranch)
+$ git status
+On branch newbranch
+nothing to commit, working tree clean
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (newbranch)
+$ git log --all
+commit aac530a64f634f026ce80f23ab6209ecc15ba7f9 (HEAD -> newbranch)
+Author: fathimafida47 <fathimafida8281@gmail.com>
+Date:   Sat Jul 22 13:30:34 2023 +0530
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+ second commit
+
+commit fff60da079b55ab1758a004b31c4b8193560fd7a (origin/master, master)
+Author: fathimafida47 <fathimafida8281@gmail.com>
+Date:   Sat Jul 22 13:11:04 2023 +0530
+
+    first commit
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (newbranch)
+$  git status
+On branch newbranch
+nothing to commit, working tree clean
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (newbranch)
+$ git push origin newbranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 443 bytes | 443.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'newbranch' on GitHub by visiting:
+remote:      https://github.com/fathimafida47/gitdemo/pull/new/newbranch
+remote:
+To https://github.com/fathimafida47/gitdemo.git
+ * [new branch]      newbranch -> newbranch
+
+91701@FATHIMA MINGW64 ~/Desktop/baabtra/GIT-22-7 (newbranch)
+$
